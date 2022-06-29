@@ -1,0 +1,72 @@
+.about-container{
+    padding-top: 50px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.about-header{
+    padding-top: 20px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 25px;
+    font-weight: 600;
+}
+.about-header h3{
+    font-size: 35px;
+    font-weight: 800;
+}
+.about-header p{
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.header-underline{
+    height: 3px;
+    width: 200px;
+    background-color: rgb(102, 13, 13);
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.header-underline1{
+    height: 9px;
+    width: 40px;
+    background-color: rgb(255, 7, 7);
+    position: absolute;
+    border-radius: 5px;
+}
+
+.aboutDetails{
+    margin-top: 50px;
+    margin-bottom: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.aboutCard{
+    height: 600px;
+    width: 80%;
+    /* border: 1px solid black; */
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    display: flex;
+    /* justify-content: center; */
+}
+.profilePic{
+    width: 48%;
+    overflow: hidden;
+}
+.profilePic img{
+    width: 100%;
+}
+
+.profileDetails{
+    width: 52%;
+    padding: 40px 40px 40px 30px;
+    background-color: rgb(255, 255, 255);
+    text-align: justify;
+    word-spacing: 5px;
+    line-height: 2;
+}
