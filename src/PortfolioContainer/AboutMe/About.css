@@ -70,3 +70,13 @@
     word-spacing: 5px;
     line-height: 2;
 }
+.profileDetails h4{
+    margin-top: 40px;
+}
+.keyHighlights{
+    list-style-type: "🔴 ";
+}
+
+.resumeBtn{
+    margin-top: 30px;
+}

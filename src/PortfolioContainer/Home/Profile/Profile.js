@@ -56,10 +56,7 @@ export default function Profile() {
                     </span>
                 </div>
                 <div className="profile-optins">
-                    <button className='btn primary-btn'>
-                        Hire me
-                    </button>  
-                    <a href="#" download="abc.pdf">
+                    <a href="https://drive.google.com/file/d/1MEY3bfr14zx4oCrw6evXhElsYBQjlO68/view?usp=sharing" target="_blank" download="resume.pdf">
                         <button className='btn highlighted-btn'>Get Resume</button>
                     </a>
                 </div>

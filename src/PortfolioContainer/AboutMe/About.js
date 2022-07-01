@@ -22,13 +22,24 @@ export default function About() {
                 <div className="profileDetails">
                     Full Stack web and Java backend developer with background knowledge of MERN stack, along with building application with utmost efficiency. Strong professional to be an asset for an organization.
                     <div>
-                        hello
+                        <h4>Here are a Few Highlights</h4>
+                        <ul className='keyHighlights'>
+                            <li>Full Stack web development</li>
+                            <li>Java Backend Development</li>
+                            <li>Spring Boot</li>
+                            <li>Building REST API</li>
+                            <li>Managing Database</li>
+                            <li>React</li>
+                        </ul>
                     </div>
+                    <div className="profile-optins resumeBtn">
+                    <a href="https://drive.google.com/file/d/1MEY3bfr14zx4oCrw6evXhElsYBQjlO68/view?usp=sharing" target="_blank" download="resume.pdf">
+                        <button className='btn highlighted-btn'>Get Resume</button>
+                    </a>
+                </div>
                 </div>
             </div>
         </div>
-
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste, laborum, reprehenderit a eaque blanditiis quae quia delectus nesciunt minima architecto, expedita magni illum rerum consectetur facere eius error autem aut vitae ea. Id magni laboriosam, voluptatibus iste odio assumenda quas aspernatur tempora molestias deleniti? Reprehenderit facilis nisi eaque eligendi quos.</p>
     </div>
   )
 }

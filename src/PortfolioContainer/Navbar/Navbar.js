@@ -19,10 +19,10 @@ export default function Navbar() {
         </div>
         <div className="nav-menu-sec">
             <div className="nav-menu">
+                <a href="#">Home</a>
                 <a href="#">About</a>
-                <a href="#">Contact </a>
                 <a href="#">Projects</a>
-                <a href="#">Testomonial</a>
+                <a href="#">Contact </a>
             </div>
 
             <button className="navbar-toggler" data-toggle="open-navbar1">
