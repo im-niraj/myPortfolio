@@ -151,4 +151,10 @@
     .profile-details{
         width: 90%; 
     }
+    .profile-optins .highlighted-btn{
+        box-sizing: border-box;
+        font-size: 15px;
+        margin: 0 0 0 28px;
+        
+    }
 }
