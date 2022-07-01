@@ -5,7 +5,7 @@ import profilePic from "../../assets/profilephoto1.jpg"
 export default function About() {
     
   return (
-    <div className='about-container'>
+    <div className='about-container' id='About'>
         <div className='about-header'>
             <h3>About Me</h3>
             <p>Why Choose Me?</p>

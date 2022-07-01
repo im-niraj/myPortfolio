@@ -1,6 +1,6 @@
 .resume-container{
     padding-top: 50px;
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Poppins', sans-serif;
 }
 
 .resume-header{
@@ -14,7 +14,7 @@
     font-weight: 600;
 }
 .resume-header h3{
-    font-size: 35px;
+    font-size: 40px;
     font-weight: 800;
 }
 .resume-header p{

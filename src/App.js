@@ -4,14 +4,19 @@ import About from "./PortfolioContainer/AboutMe/About";
 import Navbar from "./PortfolioContainer/Navbar/Navbar";
 import Resume from "./PortfolioContainer/Resume/Resume";
 import Contact from "./PortfolioContainer/ContactMe/Contact";
+import Project from "./PortfolioContainer/Project/Project";
+import Footer from "./PortfolioContainer/Footer/Footer";
+
 function App() {
   return (
     <div className="App">
         <Navbar/>
         <Home/>
         <About/>
-        <Resume/>
+        {/* <Resume/> */}
+        <Project/>
         <Contact/>
+        <Footer/>
     </div>
   );
 }

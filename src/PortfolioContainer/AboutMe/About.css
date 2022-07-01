@@ -1,6 +1,6 @@
 .about-container{
     padding-top: 50px;
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Poppins', sans-serif;
 }
 
 .about-header{
@@ -14,7 +14,7 @@
     font-weight: 600;
 }
 .about-header h3{
-    font-size: 35px;
+    font-size: 40px;
     font-weight: 800;
 }
 .about-header p{
@@ -80,3 +80,4 @@
 .resumeBtn{
     margin-top: 30px;
 }
+

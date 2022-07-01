@@ -28,9 +28,27 @@
     letter-spacing: 1.2px;
     color: rgb(255, 255, 255);
 }
+.nav-logo a:hover{
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+}
 .nav-menu a{
-    margin-left: 40px;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
     font-weight: 600;
+    cursor: pointer;
+}
+.nav-menu a:hover{
+    color: #fff;
+    text-align: center;
+   
+}
+.nav-menu .activeMenu{
+    padding-bottom: 4px;
+    border-bottom: 3px solid red;
+    color: yellow;
 }
 
 .sticky{

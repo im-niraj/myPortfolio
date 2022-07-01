@@ -1,6 +1,6 @@
 .contact-container{
     padding-top: 50px;
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Poppins', sans-serif;
 }
 
 .contact-header{
@@ -14,7 +14,7 @@
     font-weight: 600;
 }
 .contact-header h3{
-    font-size: 35px;
+    font-size: 40px;
     font-weight: 800;
 }
 .contact-header p{
@@ -52,19 +52,23 @@
     width: 80%;
     border-radius: 24px;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    
     display: flex;
     background-color: rgb(25, 39, 48);
+    /* background-image: url('../../assets/mailz.jpeg'); */
     /* justify-content: center; */
 }
 .getInTouch{
     width: 50%;
+}
+.topHead{
     padding: 50px;
 }
-.getInTouch h1{
+.topHead h1{
     color: #fff;
-    font-weight: 900;
+    font-weight: 700;
     letter-spacing: 2px;
-    font-size: 50px;
+    font-size: 40px;
 
 }
 
@@ -97,16 +101,31 @@
     height: 50px;
     padding-left:10px ;
     margin-bottom: 20px;
+    color: #000;
+    font-weight: 500;
+}
+.formInput textarea{
+    padding: 10px;
+}
+.formInput textarea:focus{
+    background-color: #fff;
+    border: 2px solid rgb(155, 137, 238);
+}
+.formInput input:focus{
+    background-color: #fff;
+    border: 2px solid rgb(155, 137, 238);
 }
 .formInput button{
-    border-radius: 14px;
+    border-radius: 24px;
     border:0px;
     padding: 10px 30px;
     background-color: rgb(3, 15, 15);
     color: #fff;
 
 }
-
+.formInput button:hover{
+    cursor: pointer;
+}
 .colz-icon i{
     color: white;
     padding: 8px;
@@ -114,4 +133,18 @@
 }
 .colz-icon i:hover{
     transform: scale(1.5);
+}
+
+.sendEmail{
+    margin-top: 60px;
+    color: rgb(160, 159, 162);
+    width: 100%;
+    padding-left: 10px;
+    font-size: 25px;
+    letter-spacing: 3px;
+}
+.sendEmail img{
+    width: 100%;
+    opacity: 0.5;
+    
 }

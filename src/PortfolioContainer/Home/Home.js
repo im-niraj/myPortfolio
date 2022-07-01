@@ -6,7 +6,7 @@ import Profile from './Profile/Profile';
 
 export default function Home() {
   return (
-    <div className="home-container">
+    <div className="home-container" id='Home'>
         <Profile/>
     </div>
   )

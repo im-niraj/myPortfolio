@@ -6,6 +6,7 @@
     height: 10%;
     min-height: fit-content;
     padding-top: 25px;
+    font-family: 'Poppins', sans-serif;
 }
 .profile-parent{
     display: flex;
@@ -14,7 +15,7 @@
 }
 .profile-details-name{
     font-size: 24px;
-    font-family: "Poppins SemiBold";
+    font-family: 'Poppins', sans-serif;
 }
 .profile-details-role{
     display: flex;
@@ -23,7 +24,8 @@
 }
 .profile-details-role h1{
     font-size: 40px;
-    font-family: 'Lobster', cursive;;
+    font-family: 'Kalam', cursive;
+    font-weight: 600;
 }
 
 .primary-text{
@@ -36,18 +38,22 @@
 .profile-role-tagline{
     font-size: 19px;
     margin: 5px 0 0 0;
-    font-family: "Poppins Light";
+    font-family: 'Poppins', sans-serif;
 }
 .profile-optins {
     margin-bottom: 10px;
 }
 .profile-optins .highlighted-btn{
+    box-sizing: border-box;
+    font-size: 18px;
     margin: 0 0 0 28px;
+    
 }
 .profile-optins .highlighted-btn:hover{
     margin: 0 0 0 28px;
-    background-color: cornsilk;
-    color: #111;
+    background-color: rgb(255, 255, 255);
+    color: rgb(3, 20, 255);
+    border: 1px double rgb(3, 20, 255);
 }
 
 .profile-picture{
@@ -78,7 +84,7 @@
     padding: 8px;
     padding-left: 10px;
 }
-.colz .colz-icon i{
+.colz .colz-icon i:hover{
     transform: scale(1.5);
 }
 
