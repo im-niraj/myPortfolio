@@ -1,8 +1,6 @@
 import React, { useState } from "react";
 import "./Navbar.css";
 import { Link } from 'react-scroll';
-import { NavLink } from 'react-router-dom';
-
 export default function Navbar() {
     const [flag, setFlag] = useState(false);
    const toggleButton = () => {

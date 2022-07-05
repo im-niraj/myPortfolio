@@ -1,6 +1,5 @@
 .contact-container{
-    padding-top: 50px;
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Montserrat', sans-serif;
 }
 
 .contact-header{
@@ -20,7 +19,7 @@
 .contact-header p{
     font-size: 15px;
     font-weight: 500;
-    letter-spacing: 5px;
+    letter-spacing: 3px;
 }
 
 .header-underline{
@@ -45,113 +44,103 @@
     margin-bottom: 50px;
     display: flex;
     justify-content: center;
-    align-items: center;
 }
-.contactCard{
-    height: 600px;
-    width: 80%;
-    border-radius: 24px;
-    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-    
-    display: flex;
-    background-color: rgb(25, 39, 48);
-    /* background-image: url('../../assets/mailz.jpeg'); */
-    /* justify-content: center; */
-}
-.getInTouch{
-    width: 50%;
-}
-.topHead{
-    padding: 50px;
-}
-.topHead h1{
-    color: #fff;
-    font-weight: 700;
-    letter-spacing: 2px;
-    font-size: 40px;
+.contactForm{
+    display: grid;
+    grid-template-columns: auto auto;
 
+    /* display: flex;
+    max-height: 230px;
+    justify-content: center;
+    border: 1px solid black;
+    width: fit-content; */
 }
-
-.messageForm{
-    width: 50%;
-    padding: 80px 20px 20px 30px;
-   
-}
-
-.formInput{
-    border-radius: 14px;
-    background-color: rgb(255, 255, 255);
+.leftForm{
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    height: 100%;
-    padding: 20px;
+    justify-content: space-between;
 }
-.formInput p{
-    margin: 0;
-    color: black;
-    font-weight: 500;
-    font-size: 24px;
-    letter-spacing: 4px;
+.row{
+   display: flex;
+   flex-wrap: wrap; 
+   width: 500px;
+   height: fit-content;
+   padding-left: 30px;
+   padding-right: 30px;
 }
-.formInput input, textarea{
-    border-radius: 15px;
-    border: 0px;
-    background-color: rgb(214, 214, 214);
-    height: 50px;
-    padding-left:10px ;
-    margin-bottom: 20px;
-    color: #000;
-    font-weight: 500;
-}
-.formInput textarea{
+.row input,textarea{
     padding: 10px;
-}
-.formInput textarea:focus{
-    background-color: #fff;
-    border: 2px solid rgb(155, 137, 238);
-}
-.formInput input:focus{
-    background-color: #fff;
-    border: 2px solid rgb(155, 137, 238);
-}
-.formInput button{
-    border-radius: 24px;
-    border:0px;
-    padding: 10px 30px;
-    background-color: rgb(3, 15, 15);
-    color: #fff;
+    border: 1px solid #e9ecef;
+    border-radius: 7px;
+    font-size: 14px;
 
 }
-.formInput button:hover{
-    cursor: pointer;
+.row input,textarea{
+    width: 100%;
 }
-.colz-icon i{
-    color: white;
-    padding: 8px;
-    font-size: 30px;
+#inputMessage{
+    resize: none;
 }
-.colz-icon i:hover{
-    transform: scale(1.5);
+.row input::placeholder,textarea::placeholder{
+    /* color: #b5becb; */
+    color: #a7acb1;
+    font-weight: 500;
+    font-size: 13px;
 }
 
-.sendEmail{
-    margin-top: 60px;
-    color: rgb(160, 159, 162);
-    width: 100%;
-    padding-left: 10px;
-    font-size: 25px;
-    letter-spacing: 3px;
-}
-.sendEmail img{
-    width: 100%;
-    opacity: 0.5;
+.sendButton{
+    margin-top: 20px;
+    grid-column: 1 / span 2;
+    display: flex;
+    justify-content: end;
+    padding-right: 15px;
     
 }
+.sendButton button{
+    font-family: 'Roboto', sans-serif;
+    border-color: #e54b4b !important;
+    box-shadow: 0 3px 5px 0 rgb(229 75 75 / 30%);
+    cursor: pointer;
+    background-color: #e54b4b !important;
+    padding: 8px 20px;
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+    transition: all 0.3s;
+    border-radius: 7px;
+    border: 1px solid #e54b4b !important;
+    color: #fff !important;
+}
 
-
-
-
+.topCtn{
+    grid-column: 1/ span 2;
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 100px;
+}
+.btnTp{
+    font-size: 30px;
+    /* border: 1px solid black; */
+    text-align: center;
+    max-width: 300px;
+    min-width: 300px;
+    line-height: .4;
+}
+.btnTp p{
+    margin-top: 30px;
+    font-size: 18px;
+    font-weight: 600;
+}
+.btnTp span{
+    font-size: 14px;
+    padding: 0;
+    margin: 0;
+}
+.btnTp .contactNo{
+    font-size: 18px;
+    color: #e54b4b;
+}
 
 @media screen and (max-width: 1110px){
    
@@ -162,39 +151,4 @@
 }
 
 @media screen and (max-width: 810px){
-    .contactCard{
-        /* height: 600px; */
-        width: 100%;
-        height: fit-content;
-        margin-left: 5px;
-        margin-right: 5px;
-        flex-direction: column;
-    }
-    .getInTouch{
-        width: 100%;
-    }
-    .topHead{
-        padding: 10px;
-        text-align: center;
-    }
-    .topHead h1{
-        color: #fff;
-        font-weight: 700;
-        letter-spacing: 2px;
-        font-size: 30px;
-    }
-    .sendEmail{
-        display: none;
-    }
-    .messageForm{
-        width: 100%;
-        padding: 10px
-       
-    }
-    
-}
-
-@media screen and (max-width: 375px){
- 
-  
 }

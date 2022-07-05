@@ -1,68 +1,85 @@
-import React from 'react'
-import './Contact.css'
-import emailBanner from '../../assets/mailz.jpeg';
+import React from "react";
+import "./Contact.css";
+import {MdEmail} from 'react-icons/md';
+import {FaMapMarkerAlt, FaPhoneAlt} from "react-icons/fa";
 
 export default function Contact() {
   return (
-    <div className='contact-container' id='Contact'>
-        <div className='contact-header'>
-            <h3>Contact Me</h3>
-            <p>Let's Keep In Touch</p>
-            <span className='header-underline'>
-                <span className='header-underline1'></span>
-            </span>
-        </div>
+    <div className="contact-container" id="Contact">
+      <div className="contact-header">
+        <h3>Contact Me</h3>
+        <p>Let's Keep In Touch</p>
+        <span className="header-underline">
+          <span className="header-underline1"></span>
+        </span>
+      </div>
 
-        <div className="contactDetails">
-            <div className="contactCard">
-                <div className='getInTouch'>
-                    <div className="topHead">
-                        <h1>Get In Touch 📧</h1>
-                        <div className="colz-icon">
-                            <a href="https://github.com/im-niraj/" target="_blank">
-                                <i class="fa fa-github" aria-hidden="true"></i>
-                            </a>
-                            <a href="https://www.linkedin.com/in/imniraj/" target="_blank">
-                                <i class="fa fa-linkedin" aria-hidden="true"></i>
-                            </a>
-                            <a href="https://www.instagram.com/n1r4jkumar/" target="_blank">
-                                <i className='fa fa-instagram'></i>
-                            </a>
-                            <a href="https://www.youtube.com/channel/UCMj15TEUdhEjr2YHL-qO7uQ" target="_blank">
-                                <i className='fa fa-youtube-play'></i>
-                            </a>
-                            <a href="https://twitter.com/n1r4jkumar" target="_blank">
-                                <i className='fa fa-twitter'></i>
-                            </a>
-                        </div>
-                    </div>
-                    
-
-                    <div className='sendEmail'>
-                        Send Your Email Here!
-                        <img src={emailBanner} alt="" />
-                    </div>
+      <div className="contactDetails">
+        <div className="contactForm">
+            <div className="topCtn">
+                <div className="callBtn btnTp">
+                    <FaPhoneAlt/>
+                    <p>PHONE</p>
+                    <span>My personal number </span>
+                    <p className="contactNo">+919453800108</p>
                 </div>
-                <div className='messageForm'>
-
-                    <div className='formInput'>
-                        <p>Name</p>
-                        <input type="text" name="name" id="name" />
-                        <p>Email</p>
-                        <input type="email" name="email" id="email" />
-                        <p>Message</p>
-                        <textarea name="message" id="message" cols="30" rows="3" ></textarea>
-                        <div>
-                        <button>Send <i class="fa fa-paper-plane" aria-hidden="true"></i></button>
-                        </div>
-                        
-                       
-                    </div>
+                <div className="emailBtn btnTp">
+                    <MdEmail />
+                    <p>EMAIL</p>
+                    <span>Contact me on email address</span>
+                    <p className="contactNo">n1r4jkumar@gmail.com</p>
                 </div>
+                <div className="addrBtn btnTp">
+                    <FaMapMarkerAlt />
+                    <p>LOCATION</p>
+                    <span>Dist-Mirzapur, Uttar Pradesh 231304 </span>
+                    <p className="contactNo">View on Google Map</p>
+                </div>
+                
             </div>
+          <div className="leftForm">
+            <div className="row">
+              <input
+                type="text"
+                name="name"
+                id="name"
+                placeholder="Full Name: "
+              />
+            </div>
+            <div className="row">
+              <input
+                type="email"
+                name="email"
+                id="email"
+                placeholder="Your Email:"
+              />
+            </div>
+            <div className="row">
+              <input
+                type="text"
+                name="subject"
+                id="subject"
+                placeholder="Your Subject:"
+              />
+            </div>
+          </div>
+          <div className="rightForm">
+            <div className="row">
+              <textarea
+                name="message"
+                id="inputMessage"
+                cols="0"
+                rows="9"
+                placeholder="Your Message:"
+                spellcheck="false"
+              ></textarea>
+            </div>
+          </div>
+          <div className="sendButton" colspan='2'>
+            <button>Send Message</button>
+          </div>
         </div>
-
-    
+      </div>
     </div>
-  )
+  );
 }
