@@ -48,40 +48,33 @@
 .contactForm{
     display: grid;
     grid-template-columns: auto auto;
-
-    /* display: flex;
-    max-height: 230px;
-    justify-content: center;
-    border: 1px solid black;
-    width: fit-content; */
 }
 .leftForm{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
 }
-.row{
+.rows{
    display: flex;
-   flex-wrap: wrap; 
    width: 500px;
    height: fit-content;
    padding-left: 30px;
    padding-right: 30px;
 }
-.row input,textarea{
+.rows input,textarea{
     padding: 10px;
     border: 1px solid #e9ecef;
     border-radius: 7px;
     font-size: 14px;
 
 }
-.row input,textarea{
+.rows input,textarea{
     width: 100%;
 }
 #inputMessage{
     resize: none;
 }
-.row input::placeholder,textarea::placeholder{
+.rows input::placeholder,textarea::placeholder{
     /* color: #b5becb; */
     color: #a7acb1;
     font-weight: 500;
@@ -147,8 +140,59 @@
 }
 
 @media screen and (max-width: 910px){
-
+    .contactForm{
+        grid-template-columns: auto;
+        width: 90%;
+        align-items: center;
+    }
+    .topCtn{
+        grid-column: 1 / span 1;
+        display: flex;
+        flex-wrap: wrap-reverse;
+        justify-content: space-around;
+        margin-bottom: 100px;
+        align-items: center;
+    }
+    .sendButton{
+        grid-column: 1 / span 1;
+        padding-right: 0px;
+    }
+    .rows{
+        width: 100%;
+        height: fit-content;
+        padding-left: 0px;
+        padding-right: 0px;
+     }
+     .rows input{
+        margin-bottom: 10px;
+     }
 }
 
 @media screen and (max-width: 810px){
+    .contactForm{
+        grid-template-columns: auto;
+        width: 90%;
+        align-items: center;
+    }
+    .topCtn{
+        grid-column: 1 / span 1;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        margin-bottom: 100px;
+        align-items: center;
+    }
+    .sendButton{
+        grid-column: 1 / span 1;
+        padding-right: 0px;
+    }
+    .rows{
+        width: 100%;
+        height: fit-content;
+        padding-left: 0px;
+        padding-right: 0px;
+     }
+     .rows input{
+        margin-bottom: 10px;
+     }
 }

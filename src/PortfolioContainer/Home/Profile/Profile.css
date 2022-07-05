@@ -43,19 +43,6 @@
 .profile-optins {
     margin-bottom: 10px;
 }
-.profile-optins .highlighted-btn{
-    box-sizing: border-box;
-    font-size: 18px;
-    margin: 0 0 0 28px;
-    
-}
-.profile-optins .highlighted-btn:hover{
-    margin: 0 0 0 28px;
-    background-color: rgb(255, 255, 255);
-    color: rgb(3, 20, 255);
-    border: 1px double rgb(3, 20, 255);
-}
-
 .profile-picture{
     display: flex;
     align-items: center;
@@ -88,8 +75,32 @@
     transform: scale(1.5);
 }
 
-
-
+.resumeButton {
+    padding: 1.3em 3em;
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 2.5px;
+    font-weight: 500;
+    color: #000;
+    background-color: #fff;
+    border: none;
+    border-radius: 45px;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease 0s;
+    cursor: pointer;
+    outline: none;
+  }
+  
+  .resumeButton:hover {
+    background-color: #23c483;
+    box-shadow: 0px 15px 20px rgba(46, 229, 157, 0.4);
+    color: #fff;
+    transform: translateY(-7px);
+  }
+  
+  .resumeButton:active {
+    transform: translateY(-1px);
+  }
 
 
 @media screen and (max-width: 1110px){
@@ -140,6 +151,12 @@
     .profile-details, .profile-details-role{
         text-align: center;
     }
+    .profile-details-role h1{
+        height: 80px;
+    }
+    .resumeButton{
+        margin-left: 10px;
+    }
 }
 
 @media screen and (max-width: 375px){
@@ -154,7 +171,12 @@
     .profile-optins .highlighted-btn{
         box-sizing: border-box;
         font-size: 15px;
-        margin: 0 0 0 28px;
-        
+        margin: 0 0 0 28px;   
+    }
+    .profile-details-role h1{
+        height: 80px;
+    }
+    .resumeButton{
+        margin-left: 10px;
     }
 }

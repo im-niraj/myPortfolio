@@ -34,7 +34,7 @@ export default function About() {
                     </div>
                     <div className="profile-optins resumeBtn">
                         <a href="https://drive.google.com/file/d/1MEY3bfr14zx4oCrw6evXhElsYBQjlO68/view?usp=sharing" target="_blank" download="resume.pdf">
-                            <button className='btn highlighted-btn'>Get Resume</button>
+                            <button className='resumeButton2'>Get Resume</button>
                         </a>
                     </div>
                 </div>

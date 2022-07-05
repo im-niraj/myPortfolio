@@ -38,7 +38,7 @@ export default function Contact() {
                 
             </div>
           <div className="leftForm">
-            <div className="row">
+            <div className="rows">
               <input
                 type="text"
                 name="name"
@@ -46,7 +46,7 @@ export default function Contact() {
                 placeholder="Full Name: "
               />
             </div>
-            <div className="row">
+            <div className="rows">
               <input
                 type="email"
                 name="email"
@@ -54,7 +54,7 @@ export default function Contact() {
                 placeholder="Your Email:"
               />
             </div>
-            <div className="row">
+            <div className="rows">
               <input
                 type="text"
                 name="subject"
@@ -64,7 +64,7 @@ export default function Contact() {
             </div>
           </div>
           <div className="rightForm">
-            <div className="row">
+            <div className="rows">
               <textarea
                 name="message"
                 id="inputMessage"
