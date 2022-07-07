@@ -21,19 +21,19 @@ export default function Contact() {
                     <FaPhoneAlt/>
                     <p>PHONE</p>
                     <span>My personal number </span>
-                    <p className="contactNo">+919453800108</p>
+                    <p className="contactNo"><a href="tel:9453800108" target='_blank'>9453800108</a></p>
                 </div>
                 <div className="emailBtn btnTp">
                     <MdEmail />
                     <p>EMAIL</p>
                     <span>Contact me on email address</span>
-                    <p className="contactNo">n1r4jkumar@gmail.com</p>
+                    <p className="contactNo"><a href="mailto: n1r4jkumar@gmail.com" target='_blank'>n1r4jkumar@gmail.com</a></p>
                 </div>
                 <div className="addrBtn btnTp">
                     <FaMapMarkerAlt />
                     <p>LOCATION</p>
                     <span>Dist-Mirzapur, Uttar Pradesh 231304 </span>
-                    <p className="contactNo">View on Google Map</p>
+                    <p className="contactNo"><a href="https://goo.gl/maps/bk3WsmSVwhFWa7Vh7"  target='_blank'>View on Google Map</a></p>
                 </div>
                 
             </div>

@@ -1,6 +1,7 @@
 .about-container{
-    padding-top: 50px;
+    padding: 60px 0;
     font-family: 'Poppins', sans-serif;
+    background-color: #fdf9fa;
 }
 
 .about-header{
@@ -39,7 +40,7 @@
     border-radius: 5px;
 }
 
-.aboutDetails{
+.about-content-box{
     margin-top: 50px;
     margin-bottom: 50px;
     display: flex;
@@ -52,17 +53,20 @@
     /* border: 1px solid black; */
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     display: flex;
-    /* justify-content: center; */
+    justify-content: center;
 }
 .profilePic{
     width: 48%;
     overflow: hidden;
+    background-color: #fff;
 }
 .profilePic img{
     width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
-.profileDetails{
+.profile-content{
     width: 52%;
     padding: 40px 40px 40px 30px;
     background-color: rgb(255, 255, 255);
@@ -70,7 +74,7 @@
     word-spacing: 5px;
     line-height: 2;
 }
-.profileDetails h4{
+.profile-content h4{
     margin-top: 40px;
 }
 .keyHighlights{
@@ -108,21 +112,17 @@
     transform: translateY(-1px);
   }
 
+ 
 
 
-
-@media screen and (max-width: 1110px){
-   
-}
 
 @media screen and (max-width: 910px){
     .profilePic{
         display: none;
     }
-    .profileDetails{
+    .profile-content{
         width: 100%;
-        padding: 40px 10px 20px 10px;
-        background-color: rgb(255, 255, 255);
+        background-color: #fdf9fa;
         text-align: justify;
         word-spacing: 5px;
         line-height: 2;
@@ -130,24 +130,26 @@
 }
 
 @media screen and (max-width: 810px){
+    .about-content-box{
+        display: flex;
+        justify-content: center;
+    }
     .aboutCard{
-        flex-direction: column;
-        height: fit-content;
-        width: 95%;
-    }
-    .profilePic{
-        display: none;
-    }
-    .profileDetails{
-        width: 100%;
-        padding: 40px 10px 20px 10px;
-        background-color: rgb(255, 255, 255);
-        text-align: justify;
-        word-spacing: 5px;
-        line-height: 2;
-    }
-    .profileDetails h4{
         margin-top: 40px;
+        height: fit-content;
+        width: 100%;
+        box-shadow: none;
+        
+    }
+    .profile-content{
+        width: 100%;
+    }
+    .profile-content .profilesummary{
+        padding: 0 10px;
+    }
+    .profile-content h3{
+        margin-top: 40px;
+        padding: 0 10px;
     }
     .keyHighlights{
         list-style-type: "🔴 ";
@@ -157,14 +159,5 @@
         margin-top: 30px;
     }
     
-}
-
-@media screen and (max-width: 375px){
- 
-    .aboutCard{
-        flex-direction: column;
-        height: fit-content;
-        width: 100%;
-    }
 }
 

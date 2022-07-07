@@ -1,74 +1,111 @@
-import React, { useState } from "react";
+import React from "react";
 import "./Navbar.css";
 import { Link } from 'react-scroll';
+import {GiHamburgerMenu} from 'react-icons/gi'
+import { useEffect } from "react";
 export default function Navbar() {
-    const [flag, setFlag] = useState(false);
-   const toggleButton = () => {
-        if(flag){
-            document.getElementById("toggleMenu").style.display = 'block';
-            setFlag(!flag);
+    let toggleMenuBar;
+    const doSomething = () =>{
+        toggleMenuBar = document.getElementById("navMenuCollapsibleMenu");
+        let iTag = document.getElementById('fabtn');
+        if(toggleMenuBar.classList.value === 'InActiveNavMenu'){
+            toggleMenuBar.classList.remove('InActiveNavMenu');
+            toggleMenuBar.classList.add('activeNavMenu');
+            iTag.classList.remove('fa-bars');
+            iTag.classList.add('fa-times');
         }
         else{
-            document.getElementById("toggleMenu").style.display = 'none';
-            setFlag(!flag);
+            toggleMenuBar.classList.add('InActiveNavMenu');
+            toggleMenuBar.classList.remove('activeNavMenu');
+            iTag.classList.remove('fa-times');
+            iTag.classList.add('fa-bars');
         }
-   }
+        
+    }
 
-    window.addEventListener('scroll', () =>{
-        let navbar = document.querySelector('.navbar-header');
-        if(window.pageYOffset > 470){
-            navbar.classList.add('sticky');
+    useEffect(() => {
+        toggleMenuBar = document.getElementById("navMenuCollapsibleMenu");
+        let iTag = document.getElementById('fabtn');
+        document.addEventListener('click', (e) => {
+            if(toggleMenuBar.classList.value === 'activeNavMenu' && e.target.classList.value !== "fa fa-times"){
+                if(toggleMenuBar.classList.value == "activeNavMenu"){
+                    toggleMenuBar.classList.add('InActiveNavMenu');
+                    toggleMenuBar.classList.remove('activeNavMenu');
+                    iTag.classList.remove('fa-times');
+                    iTag.classList.add('fa-bars');
+                }
+            }
+        })
+    document.addEventListener('scroll', () =>{
+        let navbar = document.querySelector('.navMenuBar');
+        if(window.pageYOffset > 480){
+            navbar.classList.add('stickyy');
         }
         else{
-            navbar.classList.remove('sticky');
+            navbar.classList.remove('stickyy');
         }
     })
-  return (
-    <div className="navbar-header">
-        <div className="nav-logo">
-            <Link to="Home" spy={true} smooth={true} offset={0} duration={500} >
-                 NIRAJ
-            </Link>
-        </div>
-        <div className="nav-menu-sec">
-            <div className="nav-menu">
+    });
+  return (  
+    <>
+    <div className="navMenuBar">
+        <div className="navMenuContainer">
+            <div className="navMenuLogo">
                 <Link to="Home" spy={true} smooth={true} offset={0} duration={500} >
-                    Home
-                </Link>
-                <Link to="About" spy={true} smooth={true} offset={0} duration={500} >
-                    About
-                </Link>
-                <Link to="Projects" spy={true} smooth={true} offset={0} duration={500}>
-                    Projects
-                </Link>
-                <Link to="Skills" spy={true} smooth={true} offset={0} duration={500}>
-                    Skills
-                </Link>
-                <Link to="Contact" spy={true} smooth={true} offset={0} duration={500}>
-                    Contact
-                </Link>
-                
+                    NIRAJ
+                </Link> 
             </div>
-
-            <button className="navbar-toggler" data-toggle="open-navbar1" onClick={toggleButton}>
-            <i class="fa fa-bars" aria-hidden="true"></i>
-            </button>
+            <div id="toggleMenuButton" className="toggleMenuButton">
+                <i class="fa fa-bars" id="fabtn" aria-hidden="true" onClick={doSomething}></i>
+            </div>
+            <div className="navMenuBarMain">
+                    <Link to="Home" spy={true} smooth={true} offset={0} duration={500} >
+                        Home
+                    </Link>
+                 
+                    <Link to="About" spy={true} smooth={true} offset={0} duration={500} >
+                        About
+                    </Link>
+                 
+                    <Link to="Projects" spy={true} smooth={true} offset={0} duration={500}>
+                        Projects
+                    </Link>
+                 
+                    <Link to="Skills" spy={true} smooth={true} offset={0} duration={500}>
+                        Skills
+                    </Link>
+                 
+                    <Link to="Contact" spy={true} smooth={true} offset={0} duration={500}>
+                        Contact
+                    </Link>
+            </div>
         </div>
-        <div id="toggleMenu" className="hiddenMenu">
-                <li><Link to="Home" spy={true} smooth={true} offset={0} duration={500} >
-                    Home
-                </Link></li>
-                <li><Link to="About" spy={true} smooth={true} offset={0} duration={500} >
-                    About
-                </Link></li>
-                <li><Link to="Projects" spy={true} smooth={true} offset={0} duration={500}>
-                    Projects
-                </Link></li>
-                <li><Link to="Contact" spy={true} smooth={true} offset={0} duration={500}>
-                    Contact
-                </Link></li>
+        <div id="navMenuCollapsibleMenu" className="InActiveNavMenu">
+                 <div className="navMenuCollapsibleArea">
 
-        </div>
+                
+                    <Link to="Home" spy={true} smooth={true} offset={0} duration={500} >
+                        Home
+                    </Link>
+                 
+                    <Link to="About" spy={true} smooth={true} offset={0} duration={500} >
+                        About
+                    </Link>
+                 
+                    <Link to="Projects" spy={true} smooth={true} offset={0} duration={500}>
+                        Projects
+                    </Link>
+                 
+                    <Link to="Skills" spy={true} smooth={true} offset={0} duration={500}>
+                        Skills
+                    </Link>
+                 
+                    <Link to="Contact" spy={true} smooth={true} offset={0} duration={500}>
+                        Contact
+                    </Link>
+                </div>
+        </div>   
     </div>
+    </> 
   );
 }

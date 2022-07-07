@@ -1,88 +1,20 @@
-.navbar-header{
-    font-family: 'Montserrat', sans-serif;
-    display: flex;
-    justify-content: space-between;
-    padding-left: 50px;
-    padding-right: 50px;
-    max-height: 50px;
-    /* background-color: rgb(4, 1, 1); */
-    line-height: 50px;
-    position: fixed;
-    top:0;
-    width:100%;
-    z-index: 1000;
-}
-.navbar-toggler{
-    display: none;
-    line-height: 50px;
-    color: #fff;
-}
-.navbar-header a{
-    text-decoration: none;
-    color: #fff;
-}
-.nav-logo a{
-    
-    font-size: 43px;
-    font-weight: 900;
-    letter-spacing: 1.2px;
-    color: rgb(255, 255, 255);
-}
-.nav-logo a:hover{
-    color: rgb(255, 255, 255);
-    cursor: pointer;
-}
-.nav-menu a{
-    padding-left: 10px;
-    padding-right: 10px;
-    margin-left: 10px;
-    margin-right: 10px;
-    font-weight: 600;
-    cursor: pointer;
-}
-.nav-menu a:hover{
-    color: #fff;
-    text-align: center;
-   
-}
-.nav-menu .activeMenu{
-    padding-bottom: 4px;
-    border-bottom: 3px solid red;
-    color: yellow;
-}
-
-.sticky{
-    background: rgb(34,120,219);
-    background: linear-gradient(90deg, rgba(34,120,219,0.95) 0%, rgba(20,3,56,1) 100%);
-}
-
-.hiddenMenu{
-    position: absolute;
-    margin-top: 50px;
-    background-color: rgb(0, 0, 0);
-    right:20px;
-    width: 150px;
-    text-align: center;
-    border-radius: 8px;
-    display: none;
-}
-.hiddenMenu li{
-    border-bottom: 1px solid white;
-    list-style-type: none;
-    color: #fff;
-}
-.hiddenMenu li:last-child{
-    border-bottom: 0;
-}
-.hiddenMenu li:hover{
-    background-color: rgb(88, 88, 88);
-}
 
 
-@media screen and (max-width: 500px){
-    .navbar-header{
-        padding-left: 20px;
-        padding-right: 20px;
+
+/* @media screen and (max-width: 500px){
+    .navbar-headers{
+        font-family: 'Montserrat', sans-serif;
+        display: flex;
+        justify-content: space-between;
+        max-height: 50px;
+        line-height: 50px;
+        width:100%;
+        top:0px;
+        position:fixed;
+        z-index: 1000;
+    }
+    .nav-menu-sec{
+        margin-right: 30px;
     }
     .nav-logo a{
         font-size: 30px;
@@ -90,11 +22,84 @@
     .nav-menu{
         display: none;
     }
-    .navbar-toggler{
+    .navbar-toggler-button{
+        display: block;
+        color: #fff;
+        padding-top: 5px;
+    }
+    .stickyy{
+        background: rgb(34,120,219);
+    }
+}    */
+
+
+
+
+.navMenuBar{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    top: 0;
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+}
+.navMenuBar .navMenuLogo{
+    font-size: 25px;
+}
+.navMenuBar .toggleMenuButton{
+    font-size: 25px;
+}
+
+.navMenuContainer{
+    padding: 5px 20px;
+    display: flex;
+    justify-content: space-between;
+    color: #fff;
+}
+.stickyy{
+    background: rgb(34,120,219);
+    background: linear-gradient(90deg, rgba(34,120,219,0.95) 0%, rgba(20,3,56,1) 100%);
+}
+
+#navMenuCollapsibleMenu{
+    padding: 0 10px;
+    border-top: 1px solid #fff;
+    background: rgb(34,120,219);
+}
+.InActiveNavMenu{
+    display: none;
+}
+.activeNavMenu{
+    display: block;
+}
+.navMenuCollapsibleArea{
+    display: flex;
+    justify-content: space-between;
+}
+.navMenuCollapsibleArea a{
+    font-size: 13px;
+    padding: 10px;
+    color: rgb(246, 243, 243);
+    cursor: pointer;
+}
+.navMenuBarMain{
+    display: flex;
+    align-items: center;
+}
+.navMenuBarMain a{
+    margin: 0px 20px;
+}
+.toggleMenuButton{
+    display: none;
+}
+@media screen and (max-width: 500px){
+    .navMenuBarMain{
+        display: none;
+    }
+    .toggleMenuButton{
         display: block;
     }
-    .sticky{
-        background: rgb(34,120,219);
-        /* background: linear-gradient(90deg, rgba(34,120,219,0.95) 0%, rgba(20,3,56,1) 100%); */
+    .stickyy{
+        background: rgba(20,3,56,1)
     }
-}   
+}  

@@ -14,15 +14,17 @@ export default function About() {
             </span>
         </div>
 
-        <div className="aboutDetails">
+        <div className="about-content-box">
             <div className="aboutCard">
                 <div className="profilePic">
                     <img src={profilePic} alt="" />
                 </div>
-                <div className="profileDetails">
-                    Full Stack web and Java backend developer with background knowledge of MERN stack, along with building application with utmost efficiency. Strong professional to be an asset for an organization.
+                <div className="profile-content">
+                    <div className="profilesummary">
+                        Full Stack web and Java backend developer with background knowledge of MERN stack, along with building application with utmost efficiency. Strong professional to be an asset for an organization.
+                    </div>
                     <div>
-                        <h4>Here are a Few Highlights</h4>
+                        <h3>Here are a Few Highlights</h3>
                         <ul className='keyHighlights'>
                             <li>Full Stack web development</li>
                             <li>Java Backend Development</li>

@@ -1,5 +1,5 @@
 .skills-container{
-    padding-top: 50px;
+    padding: 60px 0;
     /* font-family: 'Poppins', sans-serif; */
     font-family: 'Montserrat', sans-serif;
     background-color: #f9fafd;
@@ -51,7 +51,6 @@
 
 .skillsDetails{
     margin-top: 50px;
-    margin-bottom: 50px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -61,7 +60,7 @@
     display: grid;
     grid-template-columns: auto auto auto;
     grid-gap: 30px;
-    margin-bottom: 50px;
+    /* margin-bottom: 50px; */
 }
 
 .skillBox{
@@ -104,41 +103,6 @@
     
 }
 
-
-/* 
-@media screen and (max-width: 910px){
-    .profile-picture{
-        height: 320px;
-        width: 320px;
-        margin: 0 0 0 4px;
-
-    }
-}
-
-@media screen and (max-width: 810px){
-    .profile-picture{
-        margin: 0 !important;
-    }
-    .profile-parent{
-        flex-direction: column-reverse;
-        margin: 40px 0 0 0;
-    }
-    .profile-optins{
-        display: flex;
-        justify-content: space-between;
-    }
-    .profile-details{
-        margin: 25px 0 0;
-    }
-    .profile-optins .highlighted-btn{
-        margin: 0 !important;
-    }
-    .profile-details, .profile-details-role{
-        text-align: center;
-    }
-}
-
- */
  @media screen and (max-width: 1100px){
     .skillBox{
         width: 300px;

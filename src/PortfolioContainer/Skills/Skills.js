@@ -12,7 +12,7 @@ export default function Skills() {
     <div className='skills-container' id='Skills'>
         <div className='skills-header'>
             <h3>Skills</h3>
-            <p>Hands On Exprience</p>
+            <p>Hands On Experience</p>
             <span className='header-underline'>
                 <span className='header-underline1'></span>
             </span>

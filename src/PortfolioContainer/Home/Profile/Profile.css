@@ -70,10 +70,12 @@
     color: white;
     padding: 8px;
     padding-left: 10px;
+    font-size: 23px;
 }
 .colz .colz-icon i:hover{
     transform: scale(1.5);
 }
+
 
 .resumeButton {
     padding: 1.3em 3em;

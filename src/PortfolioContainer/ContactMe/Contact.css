@@ -1,4 +1,5 @@
 .contact-container{
+    padding: 60px 0;
     font-family: 'Montserrat', sans-serif;
 }
 
@@ -130,7 +131,7 @@
     padding: 0;
     margin: 0;
 }
-.btnTp .contactNo{
+.btnTp .contactNo a{
     font-size: 18px;
     color: #e54b4b;
 }
